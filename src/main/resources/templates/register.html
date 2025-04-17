@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<title>Student Management System</title>
+
+	<style>
+		body {
+			background: #f8f9fa;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+		.hero {
+			background-color: #343a40;
+			color: white;
+			padding: 40px 20px;
+			text-align: center;
+			border-radius: 0 0 10px 10px;
+		}
+		.form-container {
+			max-width: 600px;
+			margin: 40px auto;
+			padding: 30px;
+			background: white;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm rounded-bottom">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="/home">🎓 StudentMS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link px-3" href="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="/add">Add</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="/viewI">View</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="/up">Update</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="/del">Delete</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+	<!-- Hero Section -->
+	<div class="hero">
+		<h1>Welcome to Student Management System</h1>
+		<p>Manage your student records with ease</p>
+	</div>
+
+	<!-- Form Section -->
+	<div class="form-container">
+		<h4 class="mb-4">Add a New Student</h4>
+		<form action="/addStud" method="post">
+			<div class="mb-3">
+				<label for="sname" class="form-label">Student Name</label>
+				<input type="text" class="form-control" id="sname" name="sname" required>
+			</div>
+			<div class="mb-3">
+				<label for="sid" class="form-label">Student ID</label>
+				<input type="text" class="form-control" id="sid" name="sid" required>
+			</div>
+			<div class="mb-3">
+				<label for="sbranch" class="form-label">Student Branch</label>
+				<input type="text" class="form-control" id="sbranch" name="sbranch" required>
+			</div>
+			<button type="submit" class="btn btn-primary">Add Student</button>
+		</form>
+	</div>
+
+	<!-- Bootstrap JS Bundle -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

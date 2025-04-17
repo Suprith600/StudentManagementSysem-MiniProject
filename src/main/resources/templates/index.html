@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Home Page</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .hero {
+      background-color: #343a40;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 0 0 15px 15px;
+    }
+    .welcome-card {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm rounded-bottom">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="/home">🎓 StudentMS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link px-3" href="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="/add">Add</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="/viewI">View</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="/up">Update</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="/del">Delete</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+  <h1>Welcome to Student Management System</h1>
+  <p class="lead">Effortlessly manage student records and keep everything organized.</p>
+</div>
+
+<!-- Welcome Card -->
+<div class="welcome-card text-center">
+  <h3>Hello, Admin!</h3>
+  <p>Use the navigation menu above to add, view, update, or delete student records. This system is built to help you manage everything smoothly.</p>
+  <a href="/add" class="btn btn-primary mt-3">Get Started</a>
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

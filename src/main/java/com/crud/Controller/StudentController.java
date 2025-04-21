@@ -78,12 +78,12 @@ public class StudentController {
 		return "showInfo";
 	}
 	
-	@GetMapping("/getAll")
+	@GetMapping("/viewAll")
 	public String getAllStudents(Model model)
 	{
 		List<Student> stList= ss.getAllStudents();
 		model.addAttribute("list", stList);
-		return "showInfo";
+		return "showAll";
 	}
 	
 	@PutMapping("/updateStud")
